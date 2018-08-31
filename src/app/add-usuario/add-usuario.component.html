@@ -1,5 +1,14 @@
 <br>
-<a routerLink="" routerLinkActive="active">Cancelar</a>
+<a class="btn btn-danger float-right" routerLink="" routerLinkActive="active">
+    <span class="fa fa-times-circle"></span> Cancelar
+</a>
+
+<div class="form-group row">
+    <div class="col-sm text-center">
+      <h4 class="d-block" style="background-color: #34495E; color:#fff; margin: 15px;">Agregar Usuario</h4>
+    </div>
+  </div>
+
 <form [formGroup]="myForm" [hidden]="success" #UsuarioForm="ngForm" (ngSubmit)="onGuardarUsuario()">
 
     <div class="form-group row">
