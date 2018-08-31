@@ -3,7 +3,15 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  firebaseConfig : {
+    apiKey: 'AIzaSyD5Vmr1gA5u4A2wHxUuDJAZIubuVa3TGqo',
+    authDomain: 'ecogarmon-e0fdf.firebaseapp.com',
+    databaseURL: 'https://ecogarmon-e0fdf.firebaseio.com',
+    projectId: 'ecogarmon-e0fdf',
+    storageBucket: '',
+    messagingSenderId: '651487499355'
+  }
 };
 
 /*

@@ -1,0 +1,15 @@
+.alert {
+    padding: 3px;
+    height:25px;
+    font-size: 14px    
+ }
+
+ #nuevoUsuario{
+     margin-top: 20px;
+     margin-bottom: 20px;
+ }
+ 
+ .edit{
+    margin-left: 15px;
+}
+

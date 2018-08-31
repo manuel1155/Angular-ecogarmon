@@ -1,0 +1,31 @@
+
+<a id="nuevoUsuario" class='btn btn-success' title="Alta" routerLink="/usuarios/alta" routerLinkActive="active">
+        <span class="fa fa-user-plus"></span>  Registrar Usuario
+</a>
+
+<table id="tab_pac" class="table table-bordered">
+        <thead class="thead-blue">
+        <tr>
+            <th>Item</th>
+            <th>Nombre</th>
+            <th>Teléfono</th>
+            <th>Correo(s)</th>
+            <th>Accciones</th>
+        </tr>
+
+        <tr *ngFor="let usuario of usuarios; let i=index" >
+                <th>{{ i+1 }}</th>
+                <th>{{ usuario.nombre}}</th>
+                <th>{{ usuario.telefono }}</th>
+                <th>
+                        <div class="alert alert-primary" role="alert" *ngFor="let correo of usuario.emails"> {{ correo.email }} </div>
+                </th>
+                <th><button class='btn btn-danger' title="Borrar" (click)="eliminarUsuario($event, usuario)">
+                        <span class='fa fa-user-times'> </span>
+                    </button>
+                    <a class='btn btn-primary edit' title="editar" routerLink="/user/{{usuario.id}}/editar" routerLinkActive="active">
+                        <span class="fa fa-edit"></span>
+                    </a>
+                </th>
+        </tr>
+    </thead>
